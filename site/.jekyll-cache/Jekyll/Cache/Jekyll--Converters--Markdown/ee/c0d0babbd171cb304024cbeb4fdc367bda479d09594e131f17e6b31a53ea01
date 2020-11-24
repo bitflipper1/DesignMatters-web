@@ -1,0 +1,10 @@
+I"\
+<h5 id="gpu-acceleration">GPU acceleration</h5>
+
+<p>Popovers sometimes appear blurry on Windows 10 devices due to GPU acceleration and a modified system DPI. The workaround for this in v4 is to disable GPU acceleration as needed on your popovers.</p>
+
+<p>Suggested fix:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">Popper</span><span class="p">.</span><span class="nx">Defaults</span><span class="p">.</span><span class="nx">modifiers</span><span class="p">.</span><span class="nx">computeStyle</span><span class="p">.</span><span class="nx">gpuAcceleration</span> <span class="o">=</span> <span class="o">!</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">devicePixelRatio</span> <span class="o">&lt;</span> <span class="mf">1.5</span> <span class="o">&amp;&amp;</span> <span class="sr">/Win/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nb">navigator</span><span class="p">.</span><span class="nx">platform</span><span class="p">))</span></code></pre></figure>
+
+:ET
